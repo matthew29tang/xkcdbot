@@ -14,7 +14,7 @@ app.listen(port, function () {
   console.log('Listening on port ' + port);
 });
 
-app.post('/hello', function (req, res, next) {
+app.post('/comic', function (req, res, next) {
   var userName = req.body.user_name;
   var botPayload = {
     //"text" : '*Hello ' + userName + ', welcome! I\'ll be your guide.*',
@@ -25,8 +25,6 @@ app.post('/hello', function (req, res, next) {
             "fallback": "Xkcd comic. - https://imgs.xkcd.com/comics/proofs.png",
             "color": "#36a64f",
             "pretext": "Here's a random comic",
-            "author_name": "Xkcdbot",
-            "author_icon": "https://imgs.xkcd.com/comics/proofs.png",
             "title": "XKCD Comic",
             "title_link": "https://imgs.xkcd.com/comics/proofs.png",
             "text": "Here's your comic",
