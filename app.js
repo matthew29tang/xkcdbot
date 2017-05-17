@@ -20,14 +20,30 @@ app.post('/hello', function (req, res, next) {
     "text" : '*Hello ' + userName + ', welcome! I\'ll be your guide.*',
 	"username": "Heibot",
 	"mrkdwn": true
-	/*"attachments": [
+	"attachments": [
         {
-            "title": "Title",
-            "pretext": "Pretext _supports_ mrkdwn",
-            "text": "Testing *right now!*",
-            "mrkdwn_in": ["text", "pretext"]
+            "fallback": "Xkcd comic.",
+            "color": "#36a64f",
+            "pretext": "Here's a random comic",
+            "author_name": "Xkcdbot",
+            "author_link": "google.com",
+            "author_icon": "https://imgs.xkcd.com/comics/proofs.png",
+            "title": "XKCD Comic",
+            "title_link": "https://api.slack.com/",
+            "text": "Here's your comic",
+            "fields": [
+                {
+                    "title": "Proofs",
+                    "short": false
+                }
+            ],
+            "image_url": "https://imgs.xkcd.com/comics/proofs.png",
+            "thumb_url": "http://example.com/path/to/thumb.png",
+            "footer": "Xkcd comics",
+            "footer_icon": "https://platform.slack-edge.com/img/default_application_icon.png",
+            "ts": 123456789
         }
-    ]*/
+    ]
   };
   // Loop otherwise..
   if (userName !== 'slackbot') {
