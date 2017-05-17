@@ -17,9 +17,9 @@ app.listen(port, function () {
 app.post('/hello', function (req, res, next) {
   var userName = req.body.user_name;
   var botPayload = {
-    "text" : '*Hello ' + userName + ', welcome! I\'ll be your guide.*',
-	"username": "Heibot",
-	"mrkdwn": true
+    //"text" : '*Hello ' + userName + ', welcome! I\'ll be your guide.*',
+	//"username": "Heibot",
+	//"mrkdwn": true
 	"attachments": [
         {
             "fallback": "Xkcd comic. - https://imgs.xkcd.com/comics/proofs.png",
