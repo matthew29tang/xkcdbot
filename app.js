@@ -17,17 +17,17 @@ app.listen(port, function () {
 app.post('/hello', function (req, res, next) {
   var userName = req.body.user_name;
   var botPayload = {
-    text : 'Hello ' + userName + ', welcome! I\'ll be your guide.'
-	"username": "Heibot"
+    "text" : '*Hello ' + userName + ', welcome! I\'ll be your guide.*',
+	"username": "Heibot",
 	"mrkdwn": true
-	"attachments": [
+	/*"attachments": [
         {
             "title": "Title",
             "pretext": "Pretext _supports_ mrkdwn",
             "text": "Testing *right now!*",
             "mrkdwn_in": ["text", "pretext"]
         }
-    ]
+    ]*/
   };
   // Loop otherwise..
   if (userName !== 'slackbot') {
