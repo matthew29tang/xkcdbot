@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var math = require('mathjs');
-//var fs = require('file-system');
+var fs = require('file-system');
  
 var app = express();
 var port = process.env.PORT || 1337;
@@ -27,7 +27,7 @@ app.post('/comic', function (req, res, next) {
         {
             "fallback": "Xkcd comic. - https://imgs.xkcd.com/comics/proofs.png",
             "color": "#36a64f",
-            "pretext": lnk, //"Here's a random comic",
+            "pretext": "Here's a random comic",
             "title": "XKCD Comic",
             "title_link": "https://imgs.xkcd.com/comics/proofs.png",
             "text": "Here's your comic",
