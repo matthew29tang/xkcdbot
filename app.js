@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var math = require('mathjs');
-var fs = require('fs');
+var fs = require('fs'),
 	path = require('path'),    
     filePath = path.join(__dirname, 'comics.txt');
  
