@@ -25,11 +25,11 @@ app.listen(port, function () {
 app.post('/comic', function (req, res, next) {
   var userName = req.body.user_name;
   var randomID=Math.floor((Math.random() * 1830) + 1);
-  fs = require('fs')
-  fs.readFile("comics.txt", function(err, data){
+  //fs = require('fs')
+  /*fs.readFile("comics.txt", function(err, data){
 	  if(err) throw err;
 	  var data=data.split('\n');
-	  var lnk=data[randomID]
+	  var lnk=data[randomID]*/
 	  
   }
   var botPayload = {
@@ -40,7 +40,7 @@ app.post('/comic', function (req, res, next) {
         {
             "fallback": "Xkcd comic. - https://imgs.xkcd.com/comics/proofs.png",
             "color": "#36a64f",
-            "pretext": "Here's a random comic",
+            "pretext": "Here's a random comic"+randomID,
             "title": "XKCD Comic",
             "title_link": "https://imgs.xkcd.com/comics/proofs.png",
             "text": "Here's your comic",
