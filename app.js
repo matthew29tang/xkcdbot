@@ -21,12 +21,12 @@ app.listen(port, function () {
 app.post('/comic', function (req, res, next) {
   var userName = req.body.user_name;
   var randomID=Math.floor(Math.random() * 1830);
-  var lnk=0
-  fs.readFile(path.join(process.cwd(), 'comics.txt'), function(err, data) {  
+  var lnk=0;
+  /*fs.readFile(path.join(process.cwd(), 'comics.txt'), function(err, data) {  
 	if (err) throw err;
 	var data=data.split('\n');		
 	lnk=data[randomID]
-	};
+	};*/
   var botPayload = {
     //"text" : '*Hello ' + userName + ', welcome!*',
 	//"username": "Heibot",
