@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var math = require('mathjs');
  
 var app = express();
 var port = process.env.PORT || 1337;
@@ -16,6 +17,7 @@ app.listen(port, function () {
 
 app.post('/comic', function (req, res, next) {
   var userName = req.body.user_name;
+  var randomID=Math.floor((Math.random() * 1830) + 1);
   var botPayload = {
     //"text" : '*Hello ' + userName + ', welcome! I\'ll be your guide.*',
 	//"username": "Heibot",
