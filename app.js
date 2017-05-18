@@ -23,7 +23,7 @@ app.post('/comic', function (req, res, next) {
   var randomID=Math.floor(Math.random() * 1830);
   var lnk=0;
   fs.readFile(path.join(process.cwd(),'comics.txt'), function(err, data) {  
-	if (err) throw err;
+	if (err) return res.status(200).json('"text":"fail"');
 	var data=data.split('\n');		
 	lnk=data[randomID]
 	});
