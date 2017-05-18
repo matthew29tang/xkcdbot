@@ -9,6 +9,7 @@
     "express": "^4.x.x",
     "body-parser": "^1.x.x",
     "request": "2.56.x",
-	"mathjs": "^1.x.x"
+	"mathjs": "^1.x.x",
+	"fs": "^1.x.x"
   }
 }
