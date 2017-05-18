@@ -11,5 +11,6 @@
     "file-system": "^2.2.2",
     "mathjs": "^1.x.x",
     "request": "2.56.x"
+	"path":"^1.x.x"
   }
 }
