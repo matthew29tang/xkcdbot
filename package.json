@@ -1,10 +1,10 @@
 {
-  "name": "devdacticBot",
-  "version": "0.0.1",
-  "description": "Simple testing Node server",
+  "name": "xkcdbot",
+  "version": "0.0.3",
+  "description": "XKCDbot",
   "main": "app.js",
-  "author": "Simon Reimler",
-  "license": "MIT",
+  "author": "Matthew Tang",
+  "license": "Mountang",
   "dependencies": {
     "express": "^4.x.x",
     "body-parser": "^1.x.x",
