@@ -22,11 +22,11 @@ app.post('/comic', function (req, res, next) {
   var userName = req.body.user_name;
   var randomID=Math.floor(Math.random() * 1830);
   var lnk=0;
-  /*fs.readFile(path.join(process.cwd(), 'comics.txt'), function(err, data) {  
+  fs.readFile(path.join(process.cwd(), 'comics.txt'), function(err, data) {  
 	if (err) throw err;
 	var data=data.split('\n');		
 	lnk=data[randomID]
-	};*/
+	};
   var botPayload = {
     //"text" : '*Hello ' + userName + ', welcome!*',
 	//"username": "Heibot",
@@ -35,7 +35,7 @@ app.post('/comic', function (req, res, next) {
         {
             "fallback": "Xkcd comic. - https://imgs.xkcd.com/comics/proofs.png",
             "color": "#36a64f",
-            "pretext": lnk+"Here's a random comic",
+            "pretext": lnk+"Here's a random comic"+data[3],
             "title": "XKCD Comic",
             "title_link": "https://imgs.xkcd.com/comics/proofs.png",
             "text": "Here's your comic",
