@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var math = require('mathjs');
 var fs = require('fs'),
 	path = require('path'),    
-    filePath = path.join(__dirname, 'comics.txt');
+    filePath = path.join(__dirname, '../comics.txt');
  
 var app = express();
 var port = process.env.PORT || 1337;
