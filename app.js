@@ -18,7 +18,7 @@ app.listen(port, function () {
 
 app.post('/comic', function (req, res, next) {
   var userName = req.body.user_name;
-  var randomID=Math.floor(Math.random() * 1830);
+  var randomID=Math.floor(Math.random() * 1830);  
   var botPayload = {
     //"text" : '*Hello ' + userName + ', welcome!*',
 	//"username": "Heibot",
