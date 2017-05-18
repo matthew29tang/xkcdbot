@@ -23,7 +23,6 @@ app.post('/comic', function (req, res, next) {
     if (err) throw err;
 	var data=data.split('\n');		
 	var lnk=data[randomID]
-	console.log(lnk);
 });
 });
   var botPayload = {
