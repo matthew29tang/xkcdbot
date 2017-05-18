@@ -21,12 +21,12 @@ app.listen(port, function () {
 app.post('/comic', function (req, res, next) {
   var userName = req.body.user_name;
   var randomID=Math.floor((Math.random() * 1830) + 1);
-  fs.readFile(filePath, function(err, data){		
+  /*fs.readFile(filePath, function(err, data){		
  	  if(err) throw err;		
  	  var data=data.split('\n');
 	  console.log(data);
  	  var lnk=data[randomID]
-	  console.log(lnk);
+	  console.log(lnk);*/
   var botPayload = {
     //"text" : '*Hello ' + userName + ', welcome! I\'ll be your guide.*',
 	//"username": "Heibot",
