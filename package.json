@@ -9,7 +9,6 @@
     "body-parser": "^1.x.x",
     "express": "^4.x.x",
     "file-system": "^2.2.2",
-	"fs": "^0.x.x",
     "mathjs": "^1.x.x",
     "request": "2.56.x",
 	"path":"^0.x.x"
