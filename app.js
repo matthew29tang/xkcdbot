@@ -3,14 +3,6 @@ var bodyParser = require('body-parser');
  
 var app = express();
 var port = process.env.PORT || 1337;
-
-function getRandomLine(filename){
-  fs.readFile(filename, function(err, data){
-    if(err) throw err;
-    var lines = data.split('\n');
-    lines[Math.floor(Math.random()*lines.length)];
- })
-}
  
 // body parser middleware
 app.use(bodyParser.urlencoded({ extended: true }));
