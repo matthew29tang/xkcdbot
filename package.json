@@ -6,10 +6,10 @@
   "author": "Matthew Tang",
   "license": "Mountang",
   "dependencies": {
-    "express": "^4.x.x",
     "body-parser": "^1.x.x",
-    "request": "2.56.x",
-	"mathjs": "^1.x.x",
-	"fs": "^0.x.x"
+    "express": "^4.x.x",
+    "file-system": "^2.2.2",
+    "mathjs": "^1.x.x",
+    "request": "2.56.x"
   }
 }
