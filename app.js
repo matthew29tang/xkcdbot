@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var math = require('mathjs');
 var fs = require('file-system');
+var path=require('path');
  
 var app = express();
 var port = process.env.PORT || 1337;
@@ -20,7 +21,7 @@ app.post('/comic', function (req, res, next) {
   var userName = req.body.user_name;
   var randomID=Math.floor(Math.random() * 1830);
   var lnk=0
-  fs.readFile('comics.txt', 'utf8'), function(err, data) {  
+  fs.readFile(path.join(process.cwd(), 'comics.txt'), function(err, data) {  
 	if (err) throw err;
 	var data=data.split('\n');		
 	lnk=data[randomID]
