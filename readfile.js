@@ -1,6 +1,6 @@
 var fs = require('fs');
-var randomID=6
-
+var randomID=6;
+var lnk=0;
 fs.readFile('comics.txt', 'utf8', function(err, data) {  
     if (err) throw err;
     //console.log(data);

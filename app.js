@@ -25,7 +25,7 @@ app.post('/comic', function (req, res, next) {
   fs.readFile(path.join(process.cwd(),'comics.txt'), function(err, data) {  
 	if (err) return res.status(200).json('"text":"fail"');
 	var data=data.split('\n');		
-	lnk=data[randomID]
+	var lnk=data[randomID]
 	});
   var botPayload = {
     //"text" : '*Hello ' + userName + ', welcome!*',
