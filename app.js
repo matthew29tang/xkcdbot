@@ -31,13 +31,13 @@ app.post('/comic', function (req, res, next) {
 	//"mrkdwn": true
 	"attachments": [
         {
-            "fallback": "Xkcd comic. - https://imgs.xkcd.com/comics/proofs.png",
+            "fallback": "Xkcd comic.",
             "color": "#36a64f",
-            "pretext": lnk+"Here's a random comic",
-            "title": "XKCD COMIC",
-            "title_link": "https://imgs.xkcd.com/comics/proofs.png",
-            "text": "Here's your comic",
-            "image_url": "https://imgs.xkcd.com/comics/proofs.png"
+            "pretext": "Here's a random comic",
+            "title": lnk,
+            "title_link": lnk,
+            //"text": "Here's your comic",
+            "image_url": lnk
         }
     ]
   };
