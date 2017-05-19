@@ -6,5 +6,5 @@ fs.readFile('comics.txt', 'utf8', function(err, data) {
     //console.log(data);
 	var data=data.split('\n');		
 	var lnk=data[randomID]
-	console.log(lnk);
+	console.log(data);
 });
