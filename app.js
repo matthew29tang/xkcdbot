@@ -37,7 +37,7 @@ app.post('/comic', function (req, res, next) {
             "fallback": "Xkcd comic. - https://imgs.xkcd.com/comics/proofs.png",
             "color": "#36a64f",
             "pretext": lnk+"Here's a random comic"+d,
-            "title": "XKCD Comic",
+            "title": process.cwd(),
             "title_link": "https://imgs.xkcd.com/comics/proofs.png",
             "text": "Here's your comic",
             "image_url": "https://imgs.xkcd.com/comics/proofs.png"
